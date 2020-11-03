@@ -10,4 +10,25 @@
         color: var(--sample-color-var);
     }
     */
+
+    /* button */
+    --mss-btn-wideness: 144px;
+    --mss-btn-thickness: 12px;
+    --mss-btn-border-color: darkgrey;
+    --mss-btn-border-thickness: 1px;
+    --mss-btn-border-style: solid;
+    --mss-btn-border-radius: 8px;
+    --mss-btn-font-weight: bold;
+    --mss-btn-background-image: linear-gradient(white, #b0b0b0);
+}
+
+.mss-btn {
+    width: var(--mss-btn-wideness);
+    max-width: var(--mss-btn-wideness);
+    padding-top: var(--mss-btn-thickness);
+    padding-bottom: var(--mss-btn-thickness);
+    border: var(--mss-btn-border-thickness) var(--mss-btn-border-color) var(--mss-btn-border-style);
+    border-radius: var(--mss-btn-border-radius);
+    font-weight: var(--mss-btn-font-weight);
+    background-image: var(--mss-btn-background-image);
 }
