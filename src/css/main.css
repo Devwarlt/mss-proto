@@ -20,6 +20,26 @@
     --mss-btn-border-radius: 8px;
     --mss-btn-font-weight: bold;
     --mss-btn-background-image: linear-gradient(white, #b0b0b0);
+
+    /* inputs */
+    --mss-input-wideness: 196px;
+    --mss-input-thickness: 12px;
+    --mss-input-border-color: #323232;
+    --mss-input-border-thickness: 2px;
+    --mss-input-border-style: solid;
+    --mss-input-border-radius: 8px;
+    --mss-input-text-padding: 12px;
+
+    /* icons */
+    --mss-input-icon-wideness: 48px;
+    --mss-input-icon-border-thickness: 2px;
+    --mss-input-icon-border-color: #323232;
+    --mss-input-icon-border-style: solid;
+    --mss-input-icon-border-radius: 8px;
+    --mss-input-icon-display: inline;
+
+    /* input forms */
+    --mss-form-ele-padding: 11px;
 }
 
 html, body {
@@ -29,7 +49,7 @@ html, body {
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif, Tahoma;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -42,4 +62,37 @@ html, body {
     border-radius: var(--mss-btn-border-radius);
     font-weight: var(--mss-btn-font-weight);
     background-image: var(--mss-btn-background-image);
+    cursor: pointer;
+}
+
+.mss-input {
+    width: var(--mss-input-wideness);
+    max-width: var(--mss-input-wideness);
+    padding-top: var(--mss-input-thickness);
+    padding-bottom: var(--mss-input-thickness);
+    border: var(--mss-input-border-thickness) var(--mss-input-border-color) var(--mss-input-border-style);
+    border-radius: var(--mss-input-border-radius);
+    padding-left: var(--mss-input-text-padding);
+}
+
+.mss-input-icon {
+    width: var(--mss-input-icon-wideness);
+    max-width: var(--mss-input-icon-wideness);
+    border: var(--mss-input-icon-border-thickness) var(--mss-input-icon-border-color) var(--mss-input-icon-border-style);
+    border-radius: var(--mss-input-icon-border-radius);
+    display: var(--mss-input-icon-display);
+}
+
+.mss-form input {
+    border-top-right-radius: var(--mss-input-border-radius);
+    border-bottom-right-radius: var(--mss-input-border-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0 transparent none;
+}
+
+.mss-form div {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: var(--mss-form-ele-padding);
 }
